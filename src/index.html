@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/main.css">
    <script src="https://cdn.tailwindcss.com"></script>
    <title>Movies</title>
 </head>
@@ -18,8 +19,8 @@
          <nav class="flex justify-start items-center h-[70px]">
             <a href="#" class="nav__logo text-white text-2xl font-bold">The Movies DB</a>
 
-            <input type="search" placeholder="Enter film name"
-               class="w-[300px]  p-3 h-[46px] ml-[200px] block rounded-xl px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600">
+            <input type="search" id="searchpanel" placeholder="Enter film name"
+               class="w-[300px]  p-3 h-[45px] ml-[200px] block rounded-xl px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600">
          </nav>
       </div>
    </header>
@@ -30,25 +31,24 @@
 
    <main>
       <section class="main">
-         <div class="container mx-auto flex">
-            <img src="" alt="">
+         <div class="container mx-auto flex fixed top-[70px]">
 
             <aside class="h-screen w-[27%] bg-green-800 shadow-lg p-5">
 
                <label for="isname">
                   <p class="ml-12 text-white mb-2">Enter film name</p>
                   <input type="search" id="isname" placeholder="Enter film name"
-                     class="w-[260px] input border-spacing-2 border-green-500 p-3 h-[46px] block rounded-xl px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto mb-5">
+                     class="input w-[260px] border-spacing-2 border-green-500 p-3 h-[46px] block rounded-xl px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto mb-5">
                </label>
 
                <label for="reating">
                   <p class="ml-12 text-white mb-2">Enter film rating</p>
-                  <input max="10" min="1" placeholder="Enter film rating" type="number" id="reating"
-                     class="w-[260px] reyting border-spacing-2 border-green-500 p-3 h-[46px] block rounded-xl mb-7 px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto ">
+                  <input max="10" min="1" placeholder="Enter film rating" type="number" id="rating"
+                     class="w-[260px] reyting border-spacing-2 border-green-500 p-3 h-[45px] block rounded-xl mb-7 px-5 focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto ">
                </label>
 
-               <select id="categories"
-                  class="w-[260px] mb-7 border-spacing-2 border-green-500 pl-3 h-[46px] block rounded-xl focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto ">
+               <select id="category"
+                  class="w-[260px] mb-7 border-spacing-2 border-green-500 pl-3 h-[45px] block rounded-xl focus:ring-2 focus:ring-green-300 focus:outline-none placeholder:text-green-600 mx-auto ">
                   <option selected disabled>Select film category</option>
                </select>
 
@@ -59,6 +59,10 @@
                   <option value="Z-a">Z-a</option>
                </select>
 
+               <button id="search"
+                  class="bg-sky-600 px-5 ml-[122px] mt-7 text-white focus:ring-2 focus:ring-green-500 rounded-xl py-2 mx-auto mb-5">
+                  SEARCH
+               </button>
             </aside>
 
             <div class="main-content h-screen w-[73%] flex flex-wrap gap-4 p-5 overflow-scroll">
@@ -73,6 +77,4 @@
    <script src="./script/index.js"></script>
 </body>
 
-</html>  
-
-<!-- <div class="card w-[330px] bg-white h-[550px] rounded-lg shadow-xl border"> </div> -->
+</html>

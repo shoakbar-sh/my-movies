@@ -1,20 +1,23 @@
 "use strict"
 
 movies.splice(100)
+let mainContent = document.querySelector(".main-content"),
+   dynamicCategory = document.querySelector("#category"),
+   isName = document.querySelector("#searchpanel"),
+   rating = document.querySelector("#rating"),
+   search = document.querySelector("#search"),
+   nameSearch = document.querySelector("#isname"),
+   sort =document.querySelector("#nomi");
 
-let content = document.querySelector(".main-content"),
-   input = document.querySelector(".input"),
-   categories = document.querySelector("#categories"),
-   sort = document.querySelector("#nomi");
-
+// normalize data
 let db = movies.map((item) => {
    return {
       title: item.title,
       year: item.year,
       category: item.categories,
       id: item.imdbId,
-      reating: item.imdbRating,
-      time: `${Math.trunc(item.runtime / 60)} H ${item.runtime % 60} m`,
+      rating: item.imdbRating,
+      time: `${Math.trunc(item.runtime / 60)} H  ${item.runtime % 60} m`,
       summary: item.summary,
       youtube: `https://www.youtube.com/embed/${item.youtubeId}`,
       maxImg: item.bigThumbnail,
@@ -23,33 +26,36 @@ let db = movies.map((item) => {
    };
 });
 
-console.log(db);
+//dynamic elememnts (cards)
 
-// ======== cards ========
+function renderData(db) {
+   mainContent.innerHTML = "";
 
-function cardRender() {
-   db.forEach(item => {
-      let card = document.createElement('div');
-      card.setAttribute(
-         "class",
-         "card w-[330px] bg-white min-h-[550px] rounded-lg shadow-xl border"
-      );
+   db.length !== 0
+      ? db.forEach((item) => {
+         const card = document.createElement('div');
+         card.setAttribute(
+            "class",
+            "card w-[330px] bg-white min-h-[550px] rounded-lg shadow-xl border"
+         );
 
-      card.innerHTML = `
-         <img src="${item.maxImg}" alt="image" class="w-[330px] h-[200px] rounded-t-lg">
+         card.innerHTML = `
+
+         <img src="${item.minImg}" alt="image" class="w-[330px] h-[200px] rounded-t-lg">
          <div class="card-bady px-5">
            <h1 class="text-green-700 text-2xl uppercase mb-1">${item.title}</h1>
+
              <ul>
                <li><strong>Year:</strong> ${item.year}</li>
                <li><strong>Language:</strong> ${item.language}</li>
                <li><strong>Category:</strong> ${item.category}</li>
                <li><strong>Runtime:</strong> ${item.time}</li>
-               <li><strong>Rating:</strong><strong class="text-red-500 ml-1">${item.reating}</strong></li>
+               <li><strong>Rating:</strong><strong class="text-red-500 ml-1">${item.rating}</strong></li>
              </ul>
-
-            <div class="flex w-full justify-between mt-4">
+           
+             <div class="flex w-full justify-between mt-4">
                <a href="${item.youtube}" target="_blank" class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Watch</a>
-
+           
                <button class="bg-sky-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-sky-400">Read more</button>
                
                <button class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Read bookmark</button>
@@ -57,92 +63,76 @@ function cardRender() {
          </div>
       `
 
-      content.append(card)
-   })
+      mainContent.append(card);
+      })
+      : (mainContent.innerHTML = `<h1 class="bg-red-100 py-4 px-5 rounded-lg text-xl text-center flex items-center justify-center h-[65px] mx-auto">MA'LUMOT TOPILMADI</h1>`);
 };
 
-cardRender();
+renderData(db);
 
+// find elements
 
-function renderCard(data) {
-
-   content.innerHTML = "";
-   data.forEach((e) => {
-      let card = document.createElement('div');
-      card.setAttribute(
-         "class",
-         "card w-[330px] bg-white min-h-[550px] rounded-lg shadow-xl border");
-
-      card.innerHTML = `
-         <img src="${e.bigThumbnail}" alt="image" class="w-[330px] h-[200px] rounded-t-lg">
-         <div class="card-bady px-5">
-           <h1 class="text-green-700 text-2xl uppercase mb-1">${e.title}</h1>
-             <ul>
-               <li><strong>Year:</strong> ${e.year}</li>
-               <li><strong>Language:</strong> ${e.language}</li>
-               <li><strong>Category:</strong> ${e.categories}</li>
-               <li><strong>Runtime:</strong> ${e.runtime}</li>
-               <li><strong>Rating:</strong><strong class="text-red-500 ml-1">${e.imdbRating}</strong></li>
-             </ul>
-
-            <div class="flex w-full justify-between mt-4">
-               <a href="${e.youtube}" target="_blank" class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Watch</a>
-
-               <button class="bg-sky-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-sky-400">Read more</button>
-               
-               <button class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Read bookmark</button>
-            </div>
-         </div>
-      `
-
-      content.append(card)
-   })
+const findFilm = (e, rating, filmType) => {
+   return db.filter((item) => {
+      return (
+         item.title.toLowerCase().match(e) &&
+         item.rating >= rating &&
+         item.category.includes(filmType)
+      );
+   });
 };
 
+isName.addEventListener("keyup", (e) => {
+   mainContent.innerHTML = '<span class="loader"></span>';
 
+   let inputValue = e.target.value.toLowerCase();
+   let regex = new RegExp(inputValue, "g");
+   let result = findFilm(regex);
+   setTimeout(() => {
+      renderData(result);
+   }, 900);
+});
 
-// ======== cards end ==========
+search.addEventListener("click", (e) => {
+   mainContent.innerHTML = '<span class="loader"></span>';
 
+   let inputValue = nameSearch.value.toLowerCase();
+   let ratingValue = rating.value;
+   let filmTyp = dynamicCategory.value;
 
-// ======== category ==========
+   console.log(inputValue);
+   console.log(ratingValue);
+   let regex = new RegExp(inputValue, "g");
+   let result = findFilm(regex, ratingValue, filmTyp);
+   console.log(result);
+   setTimeout(() => {
+      renderData(result);
+   }, 900);
+});
 
-function dynamicOption(db) {
-   let sortCategory = [];
-   db.forEach(value => {
-      value.categories.forEach(item => {
-         if (!sortCategory.includes(item)) {
-            sortCategory.push(item)
+// dynamic category
+
+function categories(db) {
+   const normalizeCategory = [];
+
+   const category = db.forEach((item) => {
+      item.category.forEach((el) => {
+         if (!normalizeCategory.includes(el)) {
+            normalizeCategory.push(el);
          }
-      })
-   })
+      });
+   });
 
-   console.log(sortCategory);
+   console.log(normalizeCategory);
+   normalizeCategory.sort();
+   normalizeCategory.forEach((el) => {
+      let option = document.createElement("option");
+      option.innerHTML = el;
+      dynamicCategory.append(option);
+   });
+}
+categories(db);
 
-   sortCategory.forEach((value) => {
-      let optionSelect = `
-        <option value=${value}>${value}</option>
-      `
-
-      categories.insertAdjacentHTML("beforeend", optionSelect)
-   })
-
-};
-
-cardRender(movies);
-dynamicOption(movies);
-
-function listener(db) {
-   db.forEach(() => {
-      category.addEventListener("change", (e) => {
-         const sortTuri = movies.filter((item) => {
-            return item.category.includes(e.target.value);
-         })
-
-         renderCard(sortTuri)
-      })
-   })
-};
-// ======== category end =========
 
 // ======== alfavite =========
 
@@ -173,14 +163,3 @@ sort.addEventListener("change", (e) => {
 });
 
 // ========= alfavit end =======
-
-// ========= search ========
-
-sort.addEventListener("keyup", (e) => {
-   
-   let filtrArr = movies.filter((item) =>
-      item.title.toLowerCase().includes(e.target.value.toLowerCase())
-   );
-
-   renderCard(filtrArr)
-});
