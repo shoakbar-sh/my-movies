@@ -7,7 +7,7 @@ let mainContent = document.querySelector(".main-content"),
    rating = document.querySelector("#rating"),
    search = document.querySelector("#search"),
    nameSearch = document.querySelector("#isname"),
-   sort =document.querySelector("#nomi");
+   sort = document.querySelector("#nomi");
 
 // normalize data
 let db = movies.map((item) => {
@@ -63,7 +63,7 @@ function renderData(db) {
          </div>
       `
 
-      mainContent.append(card);
+         mainContent.append(card);
       })
       : (mainContent.innerHTML = `<h1 class="bg-red-100 py-4 px-5 rounded-lg text-xl text-center flex items-center justify-center h-[65px] mx-auto">MA'LUMOT TOPILMADI</h1>`);
 };
