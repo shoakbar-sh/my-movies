@@ -1,5 +1,7 @@
 "use strict"
 
+movies.splice(100)
+
 let content = document.querySelector(".main-content"),
    input = document.querySelector(".input"),
    categories = document.querySelector("#categories"),
@@ -175,6 +177,7 @@ sort.addEventListener("change", (e) => {
 // ========= search ========
 
 sort.addEventListener("keyup", (e) => {
+   
    let filtrArr = movies.filter((item) =>
       item.title.toLowerCase().includes(e.target.value.toLowerCase())
    );
