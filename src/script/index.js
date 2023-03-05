@@ -1,5 +1,7 @@
 "use strict"
 
+movies.splice(100)
+
 let mainContent = document.querySelector(".main-content"),
    dynamicCategory = document.querySelector("#category"),
    isName = document.querySelector("#searchpanel"),
@@ -36,7 +38,7 @@ function renderData(db) {
          card.setAttribute(
             "class",
             "card w-[330px] bg-white min-h-[550px] rounded-lg shadow-xl border"
-         );
+         )
 
          card.innerHTML = `
 
@@ -55,9 +57,9 @@ function renderData(db) {
              <div class="flex w-full justify-between mt-4">
                <a href="${item.youtube}" target="_blank" class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Watch</a>
            
-               <button class="bg-sky-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-sky-400">Read more</button>
+               <button class="bg-sky-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-sky-400" data-view="${item.id}">Read more</button>
                
-               <button class="bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400">Read bookmark</button>
+               <button class="bookmarks bg-red-600 px-2 py-2 rounded text-white focus:ring-2 focus:ring-red-400" data-id="${item.id}">Read bookmark</button>
             </div>
          </div>
       `
@@ -122,7 +124,6 @@ function categories(db) {
       });
    });
 
-   console.log(normalizeCategory);
    normalizeCategory.sort();
    normalizeCategory.forEach((el) => {
       let option = document.createElement("option");
@@ -140,7 +141,6 @@ const sortName = () => {
       return a.title.localeCompare(b.title)
    });
 
-   console.log(sortMovie);
 };
 
 sortName();
@@ -162,3 +162,42 @@ sort.addEventListener("change", (e) => {
 });
 
 // ========= alfavit end =======
+
+// ========= bookmark =========
+
+$('#bookmark').addEventListener('click', () => {
+   $('#bookmarklist').classList.toggle('swipe');
+})
+
+let bookmarklist = []
+
+$('.main-content').addEventListener('click', (e) => {
+
+   if (e.target.classList.contains('bookmarks')) {
+      let id = e.target.getAttribute('data-id');
+
+      let film = db.filter((item) => {
+         return item.id === id;
+      })
+
+      if (!bookmarklist.includes(film[0])) {
+         bookmarklist.push(film[0])
+      }
+      console.log(bookmarklist);
+   }
+})
+
+function counter() {
+   $('#bookmarklist').innerHTML = ""
+   $("#count").textContent = bookmarklist.length;
+
+   bookmarklist.forEach(bookmark => {
+
+      const el = createElement('div', 'bg-green-300 text-white h-[20px] shadow', bookmark.title);
+      console.log(el);
+      $("#bookmarklist").append(el)
+
+   })
+}
+
+counter()

@@ -32,44 +32,44 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/jwD04NsnLLg/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/jwD04NsnLLg/maxresdefault.jpg"
   },
-  {
-    "title": "Mickey's Magical Christmas: Snowed in at the House of Mouse",
-    "year": 2001,
-    "categories": [
-      "Adventure",
-      "Animation",
-      "Comedy",
-      "Family",
-      "Fantasy"
-    ],
-    "imdbId": "tt0300195",
-    "imdbRating": 6.8,
-    "runtime": 65,
-    "language": "English",
-    "youtubeId": "uCKwHHftrU4",
-    "summary": "After everyone is snowed in at the House of Mouse, Mickey suggests they throw their own Christmas party. Everyone is happy, except for Donald who just isn't in to the Christmas spirit. So Mickey shows a series of cartoons that show just what Christmas is all about. It features a star studded cast of Disney characters from everyone's favorite animated Disney movies.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/uCKwHHftrU4/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/uCKwHHftrU4/maxresdefault.jpg"
-  },
-  {
-    "title": "Mickey's House of Villains",
-    "year": 2001,
-    "categories": [
-      "Animation",
-      "Comedy",
-      "Family",
-      "Fantasy",
-      "Horror"
-    ],
-    "imdbId": "tt0329374",
-    "imdbRating": 6.6,
-    "runtime": 0,
-    "language": "English",
-    "youtubeId": "JA03ciYt-Ek",
-    "summary": "The villains from the popular animated Disney films are gathered at the House of Mouse with plans to take over. Soon, the villains take over the house and kick out Mickey, Donald and Goofy. It's all up to Mickey and his friends to overthrow evil and return the House of Mouse to normal--or as close to normal as it get's.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/JA03ciYt-Ek/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/JA03ciYt-Ek/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Mickey's Magical Christmas: Snowed in at the House of Mouse",
+  //   "year": 2001,
+  //   "categories": [
+  //     "Adventure",
+  //     "Animation",
+  //     "Comedy",
+  //     "Family",
+  //     "Fantasy"
+  //   ],
+  //   "imdbId": "tt0300195",
+  //   "imdbRating": 6.8,
+  //   "runtime": 65,
+  //   "language": "English",
+  //   "youtubeId": "uCKwHHftrU4",
+  //   "summary": "After everyone is snowed in at the House of Mouse, Mickey suggests they throw their own Christmas party. Everyone is happy, except for Donald who just isn't in to the Christmas spirit. So Mickey shows a series of cartoons that show just what Christmas is all about. It features a star studded cast of Disney characters from everyone's favorite animated Disney movies.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/uCKwHHftrU4/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/uCKwHHftrU4/maxresdefault.jpg"
+  // },
+  // {
+  //   "title": "Mickey's House of Villains",
+  //   "year": 2001,
+  //   "categories": [
+  //     "Animation",
+  //     "Comedy",
+  //     "Family",
+  //     "Fantasy",
+  //     "Horror"
+  //   ],
+  //   "imdbId": "tt0329374",
+  //   "imdbRating": 6.6,
+  //   "runtime": 0,
+  //   "language": "English",
+  //   "youtubeId": "JA03ciYt-Ek",
+  //   "summary": "The villains from the popular animated Disney films are gathered at the House of Mouse with plans to take over. Soon, the villains take over the house and kick out Mickey, Donald and Goofy. It's all up to Mickey and his friends to overthrow evil and return the House of Mouse to normal--or as close to normal as it get's.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/JA03ciYt-Ek/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/JA03ciYt-Ek/maxresdefault.jpg"
+  // },
   {
     "title": "And Then I Go",
     "year": 2017,
@@ -230,22 +230,22 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/eMVw1pHVMAw/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/eMVw1pHVMAw/maxresdefault.jpg"
   },
-  {
-    "title": "Silent Night",
-    "year": 2017,
-    "categories": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdbId": "tt7133554",
-    "imdbRating": 7.5,
-    "runtime": 100,
-    "language": "English",
-    "youtubeId": "cA6BUYVkQoE",
-    "summary": "Adam unexpectedly visits his family house at Christmas after a few years of working abroad. No family member knows about his secret plans and the real reasons of his visit.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/cA6BUYVkQoE/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/cA6BUYVkQoE/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Silent Night",
+  //   "year": 2017,
+  //   "categories": [
+  //     "Comedy",
+  //     "Drama"
+  //   ],
+  //   "imdbId": "tt7133554",
+  //   "imdbRating": 7.5,
+  //   "runtime": 100,
+  //   "language": "English",
+  //   "youtubeId": "cA6BUYVkQoE",
+  //   "summary": "Adam unexpectedly visits his family house at Christmas after a few years of working abroad. No family member knows about his secret plans and the real reasons of his visit.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/cA6BUYVkQoE/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/cA6BUYVkQoE/maxresdefault.jpg"
+  // },
   {
     "title": "Suicide Squad: Hell to Pay",
     "year": 2018,
@@ -988,21 +988,21 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/uxM6vsMNwXs/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/uxM6vsMNwXs/maxresdefault.jpg"
   },
-  {
-    "title": "A Moving Romance",
-    "year": 2017,
-    "categories": [
-      "Family"
-    ],
-    "imdbId": "tt5039242",
-    "imdbRating": 6.1,
-    "runtime": 90,
-    "language": "English",
-    "youtubeId": "",
-    "summary": "Interior designer Olivia Wilson loses her job in New York. With newfound time on her hands she decides to head home to California to surprise her dad, Neil for the 25th anniversary of the family business, Wilson Family Movers. Upon arrival she meets the newest member of the Wilson team, Scott. With business coming to a halt, she and Scott work together to get things back on track. Just as the two begin to form a bond, Olivia is faced with a difficult decision when a worthwhile job opportunity pops up back in New York.",
-    "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
-  },
+  // {
+  //   "title": "A Moving Romance",
+  //   "year": 2017,
+  //   "categories": [
+  //     "Family"
+  //   ],
+  //   "imdbId": "tt5039242",
+  //   "imdbRating": 6.1,
+  //   "runtime": 90,
+  //   "language": "English",
+  //   "youtubeId": "",
+  //   "summary": "Interior designer Olivia Wilson loses her job in New York. With newfound time on her hands she decides to head home to California to surprise her dad, Neil for the 25th anniversary of the family business, Wilson Family Movers. Upon arrival she meets the newest member of the Wilson team, Scott. With business coming to a halt, she and Scott work together to get things back on track. Just as the two begin to form a bond, Olivia is faced with a difficult decision when a worthwhile job opportunity pops up back in New York.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
+  // },
   {
     "title": "Happy End",
     "year": 2017,
@@ -1132,22 +1132,22 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/Plr3V4TYBQE/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/Plr3V4TYBQE/maxresdefault.jpg"
   },
-  {
-    "title": "The Coming Days",
-    "year": 2010,
-    "categories": [
-      "Drama",
-      "Sci-Fi"
-    ],
-    "imdbId": "tt1545985",
-    "imdbRating": 6.3,
-    "runtime": 125,
-    "language": "English",
-    "youtubeId": "",
-    "summary": "In the near future the dreams of three adult siblings living in Germany are fractured by difficult romantic relationships and the unwitting involvement with an underground organization through a growing worldwide panic over the few remaining oil fields in Asia.",
-    "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
-  },
+  // {
+  //   "title": "The Coming Days",
+  //   "year": 2010,
+  //   "categories": [
+  //     "Drama",
+  //     "Sci-Fi"
+  //   ],
+  //   "imdbId": "tt1545985",
+  //   "imdbRating": 6.3,
+  //   "runtime": 125,
+  //   "language": "English",
+  //   "youtubeId": "",
+  //   "summary": "In the near future the dreams of three adult siblings living in Germany are fractured by difficult romantic relationships and the unwitting involvement with an underground organization through a growing worldwide panic over the few remaining oil fields in Asia.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
+  // },
   {
     "title": "Ichi the Killer",
     "year": 2001,
@@ -1182,23 +1182,23 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/RLEnTBG7ncQ/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/RLEnTBG7ncQ/maxresdefault.jpg"
   },
-  {
-    "title": "Small Town Crime",
-    "year": 2017,
-    "categories": [
-      "Crime",
-      "Mystery",
-      "Thriller"
-    ],
-    "imdbId": "tt5751998",
-    "imdbRating": 6.6,
-    "runtime": 91,
-    "language": "English",
-    "youtubeId": "WakqZghIX_g",
-    "summary": "An alcoholic ex-cop (Hawkes) finds the body of a young woman and, through an act of self-redemption, becomes hell-bent on finding the killer but unwittingly puts his family in danger and gets caught up with several dark characters along the way.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/WakqZghIX_g/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/WakqZghIX_g/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Small Town Crime",
+  //   "year": 2017,
+  //   "categories": [
+  //     "Crime",
+  //     "Mystery",
+  //     "Thriller"
+  //   ],
+  //   "imdbId": "tt5751998",
+  //   "imdbRating": 6.6,
+  //   "runtime": 91,
+  //   "language": "English",
+  //   "youtubeId": "WakqZghIX_g",
+  //   "summary": "An alcoholic ex-cop (Hawkes) finds the body of a young woman and, through an act of self-redemption, becomes hell-bent on finding the killer but unwittingly puts his family in danger and gets caught up with several dark characters along the way.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/WakqZghIX_g/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/WakqZghIX_g/maxresdefault.jpg"
+  // },
   {
     "title": "Control",
     "year": 2017,
@@ -1282,24 +1282,24 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/KXHrCBkIxQQ/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/KXHrCBkIxQQ/maxresdefault.jpg"
   },
-  {
-    "title": "Chasing the Dragon",
-    "year": 2017,
-    "categories": [
-      "Action",
-      "Biography",
-      "Crime",
-      "History"
-    ],
-    "imdbId": "tt6015328",
-    "imdbRating": 6.9,
-    "runtime": 128,
-    "language": "English",
-    "youtubeId": "Adj5dtSKF8U",
-    "summary": "The year is 1963, an illegal immigrant named Ho (Donnie Yen) sneaks into British-ruled Hong Kong. Equipped with guts and combat skills, he plunges into the underground world getting into constant conflict with rivals. After many adversaries, the once good-natured man is physically crippled and turns into a monster more atrocious than all the most corrupted cops and ruthless drug dealers. Ho eventually emerges as the most powerful drug lord under the control of Chief Detective Sergeant, Lee Rock (Andy Lau). However, with the establishment of Independent Commission Against Corruption (ICAC) by the law enforcement in 1974, Rock is forced into premature retirement. But Ho still insists he would not be stopped as he determines to become the sole dictator of the drug empire.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/Adj5dtSKF8U/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/Adj5dtSKF8U/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Chasing the Dragon",
+  //   "year": 2017,
+  //   "categories": [
+  //     "Action",
+  //     "Biography",
+  //     "Crime",
+  //     "History"
+  //   ],
+  //   "imdbId": "tt6015328",
+  //   "imdbRating": 6.9,
+  //   "runtime": 128,
+  //   "language": "English",
+  //   "youtubeId": "Adj5dtSKF8U",
+  //   "summary": "The year is 1963, an illegal immigrant named Ho (Donnie Yen) sneaks into British-ruled Hong Kong. Equipped with guts and combat skills, he plunges into the underground world getting into constant conflict with rivals. After many adversaries, the once good-natured man is physically crippled and turns into a monster more atrocious than all the most corrupted cops and ruthless drug dealers. Ho eventually emerges as the most powerful drug lord under the control of Chief Detective Sergeant, Lee Rock (Andy Lau). However, with the establishment of Independent Commission Against Corruption (ICAC) by the law enforcement in 1974, Rock is forced into premature retirement. But Ho still insists he would not be stopped as he determines to become the sole dictator of the drug empire.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/Adj5dtSKF8U/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/Adj5dtSKF8U/maxresdefault.jpg"
+  // },
   {
     "title": "I Kill Giants",
     "year": 2017,
@@ -1448,22 +1448,22 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/AXCTMGYUg9A/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/AXCTMGYUg9A/maxresdefault.jpg"
   },
-  {
-    "title": "Of Mind and Music",
-    "year": 2014,
-    "categories": [
-      "Drama",
-      "Music"
-    ],
-    "imdbId": "tt3057572",
-    "imdbRating": 7,
-    "runtime": 98,
-    "language": "English",
-    "youtubeId": "LtEQowDXUmU",
-    "summary": "A story about a beautiful street musician suffering from memory loss and a disheartened neuroscientist intent on helping her, bringing together the city of New Orleans and the jazz that made it famous.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/LtEQowDXUmU/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/LtEQowDXUmU/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Of Mind and Music",
+  //   "year": 2014,
+  //   "categories": [
+  //     "Drama",
+  //     "Music"
+  //   ],
+  //   "imdbId": "tt3057572",
+  //   "imdbRating": 7,
+  //   "runtime": 98,
+  //   "language": "English",
+  //   "youtubeId": "LtEQowDXUmU",
+  //   "summary": "A story about a beautiful street musician suffering from memory loss and a disheartened neuroscientist intent on helping her, bringing together the city of New Orleans and the jazz that made it famous.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/LtEQowDXUmU/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/LtEQowDXUmU/maxresdefault.jpg"
+  // },
   {
     "title": "Demon House",
     "year": 2018,
@@ -1660,52 +1660,52 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/FOxhoVx6a8o/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/FOxhoVx6a8o/maxresdefault.jpg"
   },
-  {
-    "title": "Iron Men",
-    "year": 2017,
-    "categories": [
-      "Documentary"
-    ],
-    "imdbId": "tt6440810",
-    "imdbRating": 7.2,
-    "runtime": 75,
-    "language": "English",
-    "youtubeId": "",
-    "summary": "Behind the scenes and with the fans of West Ham United as they move to a new home after 112 years at Upton Park.",
-    "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
-  },
-  {
-    "title": "Fassbinder",
-    "year": 2015,
-    "categories": [
-      "Documentary"
-    ],
-    "imdbId": "tt4536540",
-    "imdbRating": 6.6,
-    "runtime": 95,
-    "language": "English",
-    "youtubeId": "",
-    "summary": "A film portrait of the influential Bavarian actor, director and screenwriter who publicly confessed his homosexuality.",
-    "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
-  },
-  {
-    "title": "Black Bread",
-    "year": 2010,
-    "categories": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt1454523",
-    "imdbRating": 7,
-    "runtime": 108,
-    "language": "English",
-    "youtubeId": "mn_gJ5Aly6c",
-    "summary": "In the harsh post-war years' Catalan countryside, Andreu, a child that belongs to the losing side, finds the corpses of a man and his son in the forest. The authorities want his father to be made responsible of the deaths, but Andreu tries to help his father by finding out who truly killed them. In this search, Andreu develops a moral consciousness against a world of adults fed by lies. In order to survive, he betrays his own roots and ends up finding out the monster that lives within him.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/mn_gJ5Aly6c/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/mn_gJ5Aly6c/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Iron Men",
+  //   "year": 2017,
+  //   "categories": [
+  //     "Documentary"
+  //   ],
+  //   "imdbId": "tt6440810",
+  //   "imdbRating": 7.2,
+  //   "runtime": 75,
+  //   "language": "English",
+  //   "youtubeId": "",
+  //   "summary": "Behind the scenes and with the fans of West Ham United as they move to a new home after 112 years at Upton Park.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
+  // },
+  // {
+  //   "title": "Fassbinder",
+  //   "year": 2015,
+  //   "categories": [
+  //     "Documentary"
+  //   ],
+  //   "imdbId": "tt4536540",
+  //   "imdbRating": 6.6,
+  //   "runtime": 95,
+  //   "language": "English",
+  //   "youtubeId": "",
+  //   "summary": "A film portrait of the influential Bavarian actor, director and screenwriter who publicly confessed his homosexuality.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi//hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi//maxresdefault.jpg"
+  // },
+  // {
+  //   "title": "Black Bread",
+  //   "year": 2010,
+  //   "categories": [
+  //     "Crime",
+  //     "Drama"
+  //   ],
+  //   "imdbId": "tt1454523",
+  //   "imdbRating": 7,
+  //   "runtime": 108,
+  //   "language": "English",
+  //   "youtubeId": "mn_gJ5Aly6c",
+  //   "summary": "In the harsh post-war years' Catalan countryside, Andreu, a child that belongs to the losing side, finds the corpses of a man and his son in the forest. The authorities want his father to be made responsible of the deaths, but Andreu tries to help his father by finding out who truly killed them. In this search, Andreu develops a moral consciousness against a world of adults fed by lies. In order to survive, he betrays his own roots and ends up finding out the monster that lives within him.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/mn_gJ5Aly6c/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/mn_gJ5Aly6c/maxresdefault.jpg"
+  // },
   {
     "title": "Won't Back Down",
     "year": 2012,
@@ -1755,23 +1755,23 @@ var movies = [
     "smallThumbnail": "http://i3.ytimg.com/vi/89OP78l9oF0/hqdefault.jpg",
     "bigThumbnail": "http://i3.ytimg.com/vi/89OP78l9oF0/maxresdefault.jpg"
   },
-  {
-    "title": "Takeshis'",
-    "year": 2005,
-    "categories": [
-      "Comedy",
-      "Drama",
-      "Fantasy"
-    ],
-    "imdbId": "tt0478044",
-    "imdbRating": 6.4,
-    "runtime": 108,
-    "language": "English",
-    "youtubeId": "esRWmVRGk9M",
-    "summary": "Beat Takeshi lives the busy and sometimes surreal life of a showbiz celebrity. One day he meets his blond lookalike named Kitano, a shy convenience store cashier, who, still an unknown actor, is waiting for his big break. After their paths cross, Kitano seems to begin hallucinating about becoming Beat.",
-    "smallThumbnail": "http://i3.ytimg.com/vi/esRWmVRGk9M/hqdefault.jpg",
-    "bigThumbnail": "http://i3.ytimg.com/vi/esRWmVRGk9M/maxresdefault.jpg"
-  },
+  // {
+  //   "title": "Takeshis'",
+  //   "year": 2005,
+  //   "categories": [
+  //     "Comedy",
+  //     "Drama",
+  //     "Fantasy"
+  //   ],
+  //   "imdbId": "tt0478044",
+  //   "imdbRating": 6.4,
+  //   "runtime": 108,
+  //   "language": "English",
+  //   "youtubeId": "esRWmVRGk9M",
+  //   "summary": "Beat Takeshi lives the busy and sometimes surreal life of a showbiz celebrity. One day he meets his blond lookalike named Kitano, a shy convenience store cashier, who, still an unknown actor, is waiting for his big break. After their paths cross, Kitano seems to begin hallucinating about becoming Beat.",
+  //   "smallThumbnail": "http://i3.ytimg.com/vi/esRWmVRGk9M/hqdefault.jpg",
+  //   "bigThumbnail": "http://i3.ytimg.com/vi/esRWmVRGk9M/maxresdefault.jpg"
+  // },
   {
     "title": "The Nile Hilton Incident",
     "year": 2017,
