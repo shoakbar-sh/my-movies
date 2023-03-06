@@ -1,7 +1,5 @@
 "use strict"
 
-movies.splice(100)
-
 let mainContent = document.querySelector(".main-content"),
    dynamicCategory = document.querySelector("#category"),
    isName = document.querySelector("#searchpanel"),
