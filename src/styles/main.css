@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@media(max-width: 360px) {
+    #searchpanel {
+        display: none;
+    }
+}
 
 .loader {
     position: relative;
