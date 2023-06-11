@@ -277,7 +277,7 @@ var movies = [
     "runtime": 130,
     "language": "Руские",
     "youtubeId": "tor-ragnaryok/",
-    "smallThumbnail": "https://two-films.ru/wp-content/uploads/2019/03/1552732169_maxresdefault.jpg",
+    "smallThumbnail": "https://avatars.dzeninfra.ru/get-zen_doc/50509/pub_5aba50ef48c85e32fbb2125f_5aba634b48c85e32fbb2131c/scale_1200",
   },
   {
     "title": "Мстители: Война бесконечности",
