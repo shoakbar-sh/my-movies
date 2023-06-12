@@ -1,10 +1,10 @@
 "use strict"
 
-let mainContent = document.querySelector(".main-content"),
+let mainContent = document.querySelector(".content"),
    sort = document.querySelector("#nomi");
 
 // normalize data
-let db = movies.map((item) => {
+let file = cartoons.map((item) => {
    return {
       title: item.title,
       year: item.year,
@@ -19,18 +19,18 @@ let db = movies.map((item) => {
 
 //dynamic elememnts (cards)
 
-function renderData(db) {
+function renderData(file) {
    mainContent.innerHTML = "";
 
-   db.length !== 0
-      ? db.forEach((item) => {
-         const card = document.createElement('div');
-         card.setAttribute(
-            "class",
-            "card w-[330px] cursor-default bg-white min-h-[430px] rounded-lg shadow-xl border"
-         )
+   file.length !== 0
+   file.forEach((item) => {
+      const card = document.createElement('div');
+      card.setAttribute(
+         "class",
+         "card w-[330px] cursor-default bg-white min-h-[450px] rounded-lg shadow-xl border"
+      )
 
-         card.innerHTML = `
+      card.innerHTML = `
          <img src="${item.minImg}" alt="image" class="w-[330px] h-[200px] rounded-t-lg">
          <div class="card-bady px-5">
            <h1 class="text-green-700 text-2xl mt-2 font-semibold mb-1">${item.title}</h1>
@@ -41,15 +41,14 @@ function renderData(db) {
                <li><strong>Rating:</strong><strong class="text-red-500 ml-1">${item.rating}</strong></li>
              </ul>
            
-             <div class="flex w-full mt-3 mb-2">
+             <div class="flex w-full mb-2 mt-3">
                <a href="${item.youtube}" target="_blank" class="bg-red-600 px-2 py-2 w-64 text-center rounded text-white focus:ring-2 focus:ring-red-400">Watch</a>
              </div>
          </div>
       `
 
-         mainContent.append(card);
-      })
-      : (mainContent.innerHTML = `<h1 class="bg-red-100 py-4 px-5 rounded-lg text-xl text-center flex items-center justify-center h-[65px] mx-auto">MA'LUMOT TOPILMADI</h1>`);
+      mainContent.append(card);
+   })
 };
 
-renderData(db);
+renderData(file);
