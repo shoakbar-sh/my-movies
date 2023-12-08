@@ -9,9 +9,8 @@ let db = movies.map((item) => {
       title: item.title,
       year: item.year,
       id: item.imdbId,
-      rating: item.imdbRating,
       time: `${Math.trunc(item.runtime / 60)} H  ${item.runtime % 60} m`,
-      youtube: `https://gidonline.io/title/${item.youtubeId}`,
+      youtube: `https://hdrezka.ag/films/${item.youtubeId}`,
       minImg: item.smallThumbnail,
       language: item.language,
    };
@@ -38,7 +37,6 @@ function renderData(db) {
              <ul>
                <li><strong>Year:</strong> ${item.year}</li>
                <li><strong>Runtime:</strong> ${item.time}</li>
-               <li><strong>Rating:</strong><strong class="text-red-500 ml-1">${item.rating}</strong></li>
              </ul>
            
              <div class="flex w-full mt-3 mb-2">
